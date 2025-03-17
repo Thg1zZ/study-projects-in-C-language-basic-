@@ -11,7 +11,7 @@ int main()
     soma = 0;
     cont = 0;
 
-    printf("Digite as idades: ");
+    printf("Digite a primera  idade: ");
     scanf("%d", &idade);
 
     while (idade >= 0)
@@ -19,7 +19,7 @@ int main()
 
         soma = (soma + idade);
         cont++;
-        printf("Digite a proxima idade:");
+        printf("Digite as proximas idade:");
         scanf("%d", &idade);
     }
     if (cont == 0)
