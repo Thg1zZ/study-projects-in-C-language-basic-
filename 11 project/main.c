@@ -1,27 +1,27 @@
-//Problema numeros em vetor primeiro projeto\\ 
 #include<stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 int main()
 {
 
     int n = 0;
-    printf("Digite o valor de n:");
+    printf("Quantos numeros ira digitar?");
     scanf("%d", &n);
 
     int numeros[n];
 
     for (int i = 0; i < n; i++)
     {
-
         printf("Digite os n:");
         scanf("%d", &numeros[i]);
     }
 
-    for (int i = 0; i < n; i++)
-    {
+    printf("\nNUMEROS NEGATIVOS: \n");
 
-        printf("Digite os nomes: %d ", numeros[i]);
+    for (int i = 0; i < n; i++)
+    {if(numeros[i]<0)
+
+        printf("%d \n", numeros[i]);
     }
 
     return 0;
