@@ -1,36 +1,30 @@
-// Estrutura Repetitiva (ER) Media idade//
-
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 int main()
 {
-    int idade, soma, cont;
-    float media;
+    int x, y, soma, troca ;
 
-    soma = 0;
-    cont = 0;
+    printf("Digite dois numeros: ");
+    scanf("%d %d", &x, &y);
 
-    printf("Digite as idades: ");
-    scanf("%d", &idade);
+  troca=0;
 
-    while (idade >= 0)
-    {
+  if(y>x){                                       
+       troca=x;
+       x=y;
+       y=troca;
 
-        soma = (soma + idade);
-        cont++;
-        printf("Digite a proxima idade:");
-        scanf("%d", &idade);
     }
-    if (cont == 0)
-    {
-        printf("Impossivel calcular");
-    }
-    else
-    {
-        media = (float)soma / cont;
-        printf("Media= %0.2f ", media);
+    soma=0;
+    for (int i = y+1; i < x; i++){   if(i%2!=0)
+
+        soma=soma+i;
+        
     }
 
-    return (0);
+    printf("Soma de impares= %d", soma);
+    
+    
+    return 0;
 }
