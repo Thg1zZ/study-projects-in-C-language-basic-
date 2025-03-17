@@ -23,7 +23,7 @@ int main()
 
 
     }
-    else
+    else if(unidade=='C')
     {
         printf("Digite a temperatura em Celsius: " );
         scanf("%f",&C);
